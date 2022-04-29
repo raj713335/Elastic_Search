@@ -45,3 +45,26 @@ GET /customer/_search
 }
 ```
 
+
+```console
+GET /bank/_search
+{
+  "query":{
+    "bool":{
+      "must":{
+        "match":{
+          "address": "Lane street"
+        }},
+      "filter":{
+        "range":{
+          "balance":{
+            "gte":20000,
+            "lte":30000
+          }
+        }
+      }
+    }
+  }
+}
+```
+
