@@ -9,7 +9,7 @@ GET _search
 }
 ```
 
-GET /_cat/health?v&pretty
+```GET /_cat/health?v&pretty```
 
 ```
 PUT /customer/_doc/1?pretty
@@ -32,14 +32,16 @@ POST /customer/_doc/7
 
 
 
-GET /customer/_doc/1
+```GET /customer/_doc/1```
 
-```
-console
+```console
 GET /customer/_search
 {
   "query": {"match": {
     "name": "doe"
   }}
-  ```
 }
+```
+```console
+python train.py
+```
