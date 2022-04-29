@@ -34,8 +34,7 @@ POST /customer/_doc/7
 
 ```GET /customer/_doc/1```
 
-```
-console
+```console
 GET /customer/_search
 {
   "query": {"match": {
